@@ -13,7 +13,8 @@ module LambdaCalculus
 
         ZERO,
         SUC,
-        Add
+        Add,
+        Sub
 
     include("bool.jl")
     include("operators.jl")

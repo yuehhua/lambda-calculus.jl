@@ -13,3 +13,10 @@ struct Add end
 
 show(io::IO, ::ZERO, acc::Int=0) = print(io, "$acc")
 show(io::IO, s::SUC, acc::Int=0) = show(io, s.N, acc+1)
+
+struct Sub end
+
+(s::Sub)(x::ZERO, y::ZERO) = ZERO()
+(s::Sub)(x::SUC, y::ZERO) = x
+(s::Sub)(x::SUC, y::SUC) = Sub()(x.N, y.N)
+(s::Sub)(x::ZERO, y::SUC) = throw("Negative numbers are not supported.")
