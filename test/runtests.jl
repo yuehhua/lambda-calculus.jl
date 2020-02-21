@@ -2,7 +2,8 @@ using LambdaCalculus
 using Test
 
 tests = [
-    "operators"
+    "operators",
+    "numbers"
 ]
 
 @testset "LambdaCalculus" begin

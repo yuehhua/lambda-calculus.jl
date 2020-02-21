@@ -8,10 +8,14 @@ module LambdaCalculus
         Or,
         Not,
         Eq,
-        Xor
+        Xor,
+
+        ZERO,
+        SUC,
+        Add
 
     include("bool.jl")
     include("operators.jl")
-
+    include("numbers.jl")
 
 end # module
