@@ -2,6 +2,7 @@ using LambdaCalculus
 using Test
 
 tests = [
+    "bool",
     "operators",
     "numbers"
 ]

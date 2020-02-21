@@ -1,4 +1,5 @@
 module LambdaCalculus
+    import Base: show
 
     export
         BOOL,
